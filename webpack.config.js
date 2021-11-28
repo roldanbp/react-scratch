@@ -6,16 +6,24 @@ module.exports = {
     entry: './src',
     devtool: 'inline-source-map',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, '../dist'),
         filename: '[name].[contenthash].js'
     },
-    mode: 'production',
+    mode: 'development',
     module: {
         rules: [
             {
                 use: 'babel-loader',
                 test: /.(js|jsx)$/,
                 exclude: /node_modules/
+            },
+            {
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+                test: /.(css|sass|scss)$/,
+            },
+            {
+                type: "asset",
+                test: /.(png|svg|jpg|jpeg|gif)$/
             }
         ]
     },
@@ -26,7 +34,6 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html',
-            
         })
     ]
 }

@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+
+.ui-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &-text {
+        margin-top: 20px;
+    }
+}
