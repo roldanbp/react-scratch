@@ -10,7 +10,16 @@ const config = {
         static: {
             directory: path.join(__dirname, 'dist'),
         }
-    }
+    },
+    module: {
+        rules: [     
+            {
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+                test: /.(css|sass|scss)$/,
+            },
+        ]
+    },
+    devtool: 'eval-source-map',
 }
 
 /** @type {import('webpack').Configuration} */

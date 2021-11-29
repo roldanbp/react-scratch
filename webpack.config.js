@@ -4,9 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 /** @type {import('webpack').Configuration} */
 module.exports = {
     entry: './src',
-    devtool: 'inline-source-map',
     output: {
-        path: path.resolve(__dirname, '../dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js'
     },
     mode: 'development',
@@ -16,10 +15,6 @@ module.exports = {
                 use: 'babel-loader',
                 test: /.(js|jsx)$/,
                 exclude: /node_modules/
-            },
-            {
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-                test: /.(css|sass|scss)$/,
             },
             {
                 type: "asset",
