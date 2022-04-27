@@ -5,17 +5,4 @@
 }
 
 .ui-wrapper {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    &-text {
-        margin-top: 20px;
-    }
-    
-    &-logo {
-        width: 200px;
-    } 
 }

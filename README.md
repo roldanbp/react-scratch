@@ -1,8 +1,8 @@
-# React App from scratch
+# Frontend test
 
 ## Description
 
-React app created from scratch using webpack 5 and babel 7 in order to create a optimized project.
+Application built for smartphones sales.
 
 ## Installation 
 
