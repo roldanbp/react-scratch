@@ -1,0 +1,32 @@
+.information{
+    &__container{
+        background: #fab624;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        &-img{
+            width: 50%;
+            border-radius: 10%  ;
+        }
+        &-text{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            h2{
+                margin-bottom: 20px;
+            }
+            button{
+                padding: 10px;
+                background-color: #fab624;
+                border-radius: 5px;
+                border: 2px solid white;
+                margin: auto;
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+}

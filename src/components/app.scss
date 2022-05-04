@@ -1,8 +1,43 @@
+
+@import './information/src/information';
+@import './breadcrumb/src/breadcrumb';
+@import './search/src/Search.scss';
+@import './card/src/card';
+
 * {
     margin: 0;
     padding: 0;
-    background-color: white;
+    font-family: "PT Serif Caption";
 }
 
-.ui-wrapper {
+
+// ROUTES
+
+.products {
+    padding: 20px 60px;
+    &__title{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    &__notfound{
+        display: flex;
+        justify-content: center;
+        grid-column: 1 / 5;
+        padding: 20px;
+    }
+    &__load-action{
+        display: flex;
+        padding: 20px;
+        button{
+            padding: 10px;
+            background-color: #fab624;
+            border-radius: 5px;
+            border: 2px solid white;
+            margin: auto;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
 }

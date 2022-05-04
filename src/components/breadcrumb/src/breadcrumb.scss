@@ -1,0 +1,42 @@
+.breadcrumb{
+    background: #fab624;
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    ul {
+        display: flex;
+        list-style: none;
+        margin-left: auto;
+        margin-right: 40px;
+        .breadcrumb__item{
+            margin-left: 10px;
+            a:visited,
+            a:link,
+            a:hover{
+            text-decoration: none;
+        }
+        }
+        
+    }
+    
+    &__logo-container{
+        display: flex;
+        align-items: center;
+        .logo-text{
+            font-weight: 600;
+        }
+    }
+    
+    &__basket{
+        text-align: center;
+        p{
+            border-radius: 50%;
+            background-color: white;
+            font-size: 14px;
+            margin-left: 4px;
+        }
+        img{
+            width: 25px;
+        }
+    }
+}
