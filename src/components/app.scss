@@ -1,7 +1,9 @@
 
 @import './information/src/information';
 @import './breadcrumb/src/breadcrumb';
-@import './search/src/Search.scss';
+@import './footer/src/footer';
+@import './products-list/src/products-list';
+@import './search/src/Search';
 @import './card/src/card';
 
 * {
@@ -11,21 +13,17 @@
 }
 
 
-// ROUTES
+// ROUTES HOME
 
 .products {
     padding: 20px 60px;
+    min-height: 100vh;
     &__title{
         display: flex;
         justify-content: center;
         padding: 20px;
     }
-    &__notfound{
-        display: flex;
-        justify-content: center;
-        grid-column: 1 / 5;
-        padding: 20px;
-    }
+    
     &__load-action{
         display: flex;
         padding: 20px;

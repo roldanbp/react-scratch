@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Detail from '../routes/detail'
 import Home from "../routes/home"
 import Breadcrumb from "./breadcrumb"
+import Footer from "./footer"
 
 export default function() {
     return <BrowserRouter>
@@ -10,8 +11,9 @@ export default function() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/detail" element={<Detail />} />
+            <Route path="/:product_name/detail" element={<Detail />} />
             <Route path='*' element={<Home />} />
         </Routes>
+        <Footer />
     </BrowserRouter>
 }

@@ -1,5 +1,5 @@
 import { useContext, useState} from 'react'
-import { ProductContext } from "../../../routes/contexts"
+import { ProductContext } from "../../../context/contexts"
 
 const Search = ({className, onChange}) => {
     const productsCtx = useContext(ProductContext);

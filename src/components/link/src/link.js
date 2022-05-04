@@ -1,11 +1,10 @@
 
 import { Link, useParams } from 'react-router-dom';
 
-const customLink = ({ option }) => {
+const customLink = ({ option, children, className }) => {
     const page = useParams() || 'home';
-    console.log("TMA", page)
     const title = option.charAt(0).toUpperCase() + option.slice(1);
-    return <Link to={`/${option}`}> { title }</Link>
+    return <Link className={className} to={`/${option}`}> { children }</Link>
 }
 
 export default customLink

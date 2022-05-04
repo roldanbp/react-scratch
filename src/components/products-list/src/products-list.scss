@@ -1,0 +1,15 @@
+.products{
+    &__notfound{
+        display: flex;
+        justify-content: center;
+        grid-column: 1 / 5;
+        padding: 20px;
+    }
+    &__list-link{
+        margin: 20px;
+    }
+    &__list-link:link, &__list-link:visited, &__list-link:hover, &__list-link:active { 
+        text-decoration: none; 
+        color: black;
+    }
+}
